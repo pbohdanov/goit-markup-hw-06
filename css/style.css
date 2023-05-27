@@ -528,6 +528,36 @@ img {
 .footer-social-icon {
   fill: var(--footer-social-link-color);
 }
+.footer-subscribe-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background-color);
+}
+.footer-subscribe-form {
+  display: flex;
+}
+.footer-subscribe-label {
+  margin-right: 24px;
+}
+.footer-subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--background-color);
+}
+.footer-subscribe-input::placeholder {
+  color: var(--background-color);
+}
 /* ============ FOOTER END ========== */
 
 /* =========== MODAL WINDOW START =========== */
@@ -679,7 +709,7 @@ img {
   display: inline-flex;
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid #2e2f42;
   border-radius: 2px;
   align-items: center;
   justify-content: center;
