@@ -753,6 +753,9 @@ img {
 .textarea:focus {
   border-color: var(--accent-color);
 }
+.checkbox-wrapper {
+  margin-bottom: 24px;
+}
 /* =========== MODAL WINDOW END =========== */
 
 /* ============== PORTFOLIO START ==============  */
