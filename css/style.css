@@ -757,17 +757,25 @@ img {
   margin-bottom: 24px;
 }
 
-.checkbox-input {
-  appearance: none;
-  position: absolute;
+.checkbox-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--label-color);
 }
-.checkbox-icon {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
+.fake-checkbox {
+  display: inline-flex;
   width: 16px;
   height: 16px;
-  padding: 3px;
-  margin-right: 8px;
+  border: 1px solid #2e2f42;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.checkbox-icon {
+  width: 10px;
+  height: 8px;
 }
 /* =========== MODAL WINDOW END =========== */
 
