@@ -549,7 +549,7 @@ img {
 .modal {
   width: 408px;
   min-height: 576px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
   position: absolute;
   top: 50%;
@@ -598,16 +598,11 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 48px;
   margin-bottom: 16px;
 }
 .contact-form-label,
 .checkbox {
   display: block;
-}
-
-.contact-form-label {
-  margin-bottom: 8px;
 }
 
 .form-input {
@@ -697,6 +692,10 @@ img {
 .checkbox-input {
   appearance: none;
   position: absolute;
+}
+
+.form-wrapper {
+  margin-bottom: 8px;
 }
 
 /* =========== MODAL WINDOW END =========== */
