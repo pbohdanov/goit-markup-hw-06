@@ -26,6 +26,7 @@
   --footer-social-link-color: #f4f4fd;
   --overlay-text-color: #f4f4fd;
   --accent-color: #4d5ae5;
+  --label-color: #8e8f99;
 }
 
 body {
@@ -600,12 +601,8 @@ img {
   color: #2e2f42;
   margin-bottom: 16px;
 }
-.contact-form-label,
-.checkbox {
-  display: block;
-}
 
-.form-input {
+/* .form-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -685,19 +682,53 @@ img {
   opacity: 0;
 }
 /* input + svg > use */
-.checkbox-input:checked + .checkbox-icon > .check-mark {
+/* .checkbox-input:checked + .checkbox-icon > .check-mark {
   opacity: 1;
   fill: var(--accent-color);
 }
 .checkbox-input {
   appearance: none;
   position: absolute;
-}
-
+} */
 .form-wrapper {
   margin-bottom: 8px;
 }
 
+.form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--label-color);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+  padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
 /* =========== MODAL WINDOW END =========== */
 
 /* ============== PORTFOLIO START ==============  */
