@@ -602,94 +602,6 @@ img {
   margin-bottom: 16px;
 }
 
-/* .form-input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  padding-left: 38px;
-}
-.form-input:focus {
-  outline: none;
-  border: 1px solid var(--accent-color);
-}
-
-.form-input:focus + .form-icon {
-  fill: var(--accent-color);
-}
-.form-label-desc {
-  display: block;
-  margin-bottom: 4px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
-
-.form-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-}
-
-.form-input-wrapper {
-  position: relative;
-  display: block;
-}
-
-.user-comment {
-  width: 100%;
-  height: 120px;
-  resize: none;
-  padding: 8px 8px 8px 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-}
-
-.user-comment::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
-}
-.user-comment:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.checkbox-icon {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  width: 16px;
-  height: 16px;
-  padding: 3px;
-  margin-right: 8px;
-}
-
-.checkbox {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  margin-bottom: 24px;
-}
-.check-mark {
-  opacity: 0;
-}
-/* input + svg > use */
-/* .checkbox-input:checked + .checkbox-icon > .check-mark {
-  opacity: 1;
-  fill: var(--accent-color);
-}
-.checkbox-input {
-  appearance: none;
-  position: absolute;
-} */
 .form-wrapper {
   margin-bottom: 8px;
 }
@@ -767,16 +679,31 @@ img {
   display: inline-flex;
   width: 16px;
   height: 16px;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  padding: 3px 4px;
+  margin-right: 8px;
 }
+
 .checkbox-icon {
   width: 10px;
   height: 8px;
 }
+
+.checkbox:checked + .checkbox-label > .fake-checkbox {
+  background-color: var(--color-address-nav-link-focus);
+  border: none;
+  fill: var(--background-color);
+  border-color: var(--color-address-nav-link-focus);
+}
+
+.policy-link {
+  color: var(--accent-color);
+}
+
 /* =========== MODAL WINDOW END =========== */
 
 /* ============== PORTFOLIO START ==============  */
