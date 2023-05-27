@@ -486,7 +486,9 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.footer-social-media {
+  margin-right: 80px;
+}
 .footer-text-social {
   font-weight: 500;
   color: var(--footer-text-social-color);
@@ -557,6 +559,16 @@ img {
 }
 .footer-subscribe-input::placeholder {
   color: var(--background-color);
+}
+.subscribe-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-button-icon {
+  margin-left: 16px;
 }
 /* ============ FOOTER END ========== */
 
