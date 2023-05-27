@@ -756,6 +756,19 @@ img {
 .checkbox-wrapper {
   margin-bottom: 24px;
 }
+
+.checkbox-input {
+  appearance: none;
+  position: absolute;
+}
+.checkbox-icon {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  margin-right: 8px;
+}
 /* =========== MODAL WINDOW END =========== */
 
 /* ============== PORTFOLIO START ==============  */
